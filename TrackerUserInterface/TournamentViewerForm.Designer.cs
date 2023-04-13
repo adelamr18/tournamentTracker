@@ -36,16 +36,15 @@ namespace TrackerUserInterface
             this.roundDropDown = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.matchupListBox = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.teamOneName = new System.Windows.Forms.Label();
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
             this.teamOneScoreValue = new System.Windows.Forms.TextBox();
             this.teamTwoScoreValue = new System.Windows.Forms.TextBox();
             this.teamTwoScoreLabel = new System.Windows.Forms.Label();
-            this.teamTwoName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.versusLabel = new System.Windows.Forms.Label();
             this.scoreButton = new System.Windows.Forms.Button();
+            this.teamTwoName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerLabel
@@ -119,14 +118,6 @@ namespace TrackerUserInterface
             this.matchupListBox.TabIndex = 5;
             this.matchupListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(647, 250);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 37);
-            this.label2.TabIndex = 6;
-            // 
             // teamOneName
             // 
             this.teamOneName.AutoSize = true;
@@ -172,16 +163,6 @@ namespace TrackerUserInterface
             this.teamTwoScoreLabel.TabIndex = 12;
             this.teamTwoScoreLabel.Text = "Score";
             // 
-            // teamTwoName
-            // 
-            this.teamTwoName.AutoSize = true;
-            this.teamTwoName.Location = new System.Drawing.Point(546, 392);
-            this.teamTwoName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.teamTwoName.Name = "teamTwoName";
-            this.teamTwoName.Size = new System.Drawing.Size(165, 37);
-            this.teamTwoName.TabIndex = 11;
-            this.teamTwoName.Text = "<team two>";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -216,6 +197,16 @@ namespace TrackerUserInterface
             this.scoreButton.UseVisualStyleBackColor = true;
             this.scoreButton.Click += new System.EventHandler(this.scoreButton_Click);
             // 
+            // teamTwoName
+            // 
+            this.teamTwoName.AutoSize = true;
+            this.teamTwoName.Location = new System.Drawing.Point(546, 392);
+            this.teamTwoName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.teamTwoName.Name = "teamTwoName";
+            this.teamTwoName.Size = new System.Drawing.Size(165, 37);
+            this.teamTwoName.TabIndex = 11;
+            this.teamTwoName.Text = "<team two>";
+            // 
             // TournamentViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
@@ -231,7 +222,6 @@ namespace TrackerUserInterface
             this.Controls.Add(this.teamOneScoreValue);
             this.Controls.Add(this.teamOneScoreLabel);
             this.Controls.Add(this.teamOneName);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.matchupListBox);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.roundDropDown);
@@ -257,16 +247,15 @@ namespace TrackerUserInterface
         private System.Windows.Forms.ComboBox roundDropDown;
         private System.Windows.Forms.CheckBox checkBox1;
         private ListBox matchupListBox;
-        private Label label2;
         private Label teamOneName;
         private Label teamOneScoreLabel;
         private TextBox teamOneScoreValue;
         private TextBox teamTwoScoreValue;
         private Label teamTwoScoreLabel;
-        private Label teamTwoName;
         private Label label5;
         private Label versusLabel;
         private Button scoreButton;
+        private Label teamTwoName;
     }
 }
 
